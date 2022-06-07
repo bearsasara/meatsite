@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*カラーコード一覧
+ 青　＃293462
+ グレー背景 #b5b5b5
+ グレー文字 #4c4c4c
+ 黄色 #faffb4
+  */
+
+  /* フォント一覧
+  font-family: Arial, Helvetica, sans-serif; */
+
+  @font-face {
+      font-family: 'MyFont';
+      src: url(/font/Comic\ Sans\ MS.ttf);
+  }
+
+body{
+background-image: linear-gradient(90deg, transparent 31px, rgb(184, 184, 184) 32px),linear-gradient(0deg, transparent 31px,rgb(184, 184, 184) 32px);
+background-size: 32px 32px;
+/* background-color:aliceblue; */
+}
+
+h1{
+    color: #293462;
+    text-align: center;
+    font-size: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+}
+
+.bg-fixed{
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    right: 0px;
+    bottom: 0px;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    color: #b5b5b5;
+    font-size: 250px;
+    font-weight: 100;
+    font-family: 'MyFont';
+    text-align: center;
+    transform: rotate(-6deg);
+}
+
+.top-text{
+    /* background-color: aliceblue; */
+    height: 100vh;
+    position: relative;
+}
+
+.top-icon-container{
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.top-icon{
+    z-index: 100;
+}
+
+ 
