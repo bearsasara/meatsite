@@ -75,4 +75,112 @@ h2{
     z-index: 100;
 }
 
- 
+nav{
+/* background-color: azure; */
+position: fixed;
+z-index: 100;
+right: 0;
+top: 0;
+width: 100vw;
+display: flex;
+justify-content: space-between;
+}
+
+.part_ai{
+z-index: 100;
+}
+
+.part{
+z-index: 100;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
+}
+
+.cook{
+    width: 100vw;
+    height: 150vh;
+    /* background-color: azure; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cook_container{
+
+}
+
+.cook_contents{
+    /* background-color: wheat; */
+    display: flex;
+    margin: 100px 280px;
+}
+
+.contents_img{
+    box-shadow: 0 2px 3px rgba(0,0,0,0.57);
+    border-radius: 25px;
+}
+
+.sasami_text{
+    padding: 0 30px;
+    z-index: 100;
+}
+
+h3{
+    font-size: 50px;
+    color: #293462;
+}
+
+h4{
+    font-size: 25px;
+    color: #4c4c4c;
+}
+
+h5{
+    font-size: 20;
+    color: #4c4c4c;
+    background: linear-gradient(transparent 0%, #ffff66 0%);
+    display: inline;
+}
+
+img{
+    z-index: 100;
+}
+
+.big3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.japan{
+    z-index: 100;
+}
+
+.eatery{
+    height: 200vh;
+    width: 100vw;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.eatery_contents{
+    z-index: 100;
+    /* background-color: aliceblue; */
+    height: 50vh;
+    width: 400px;
+    margin: 30px auto;
+}
+
+h6{
+    font-size: 30px;
+    color: #293462;
+    padding: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
