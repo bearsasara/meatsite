@@ -6,96 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meatsite</title>
     <link rel="stylesheet" href="style.css" >
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
 <header class="top">
-    <div class="top-text">
-    <h1>How Different<br> The Part Of Meat</h1>
-</div>
-<div class="bg-fixed">
-<img src="/material/bg_clickme.png" class="bg_clickme">
-</div>
-<div class="top-icon-container">
-    <div class="top-icon">
-    <img src="material/icon_cow.svg" width="400px">
-    <img src="material/icon_chicken.svg"width="400px">
-    <img src="material/icon_pig.svg"width="400px">
-</div>
-</div>
-</header>
-<section class="body">
-    <nav>
-        <img src="/material/nav_chicken.png" class="nax_animal">
-        <img src="/material/nav_top.png" class="nav_top">
-    </nav>
 
-    <div class="part">
-        <img src="/material/part_chicken.png" class="part_ai">
-    </div>
-
-    <div class="cook">
-    <div class="cook_container">
-
-        <div class="cook_contents">
-
-              <div class="cook_img1">
-                <a  href="https://cookpad.com/recipe/3253102">
-                    <img class="img_size" src="/img/tori_kobu.jpg" width="400px" height="300px">
-                    <img class="img_size" src="/img/tori_sasami.jpg" width="400px" height="300px"  >
-                </a>
-             </div>
-
-
-        <div class="sasami_text">
-        <h3>ささみ</h3>
-        <h4>脂肪が少なく食感が柔らかい</h4>
-        <h5>オススメ</h5>
-        <a class="button_cook" style="color:#4c4c4c;font-weight:600;" target="_blank" href="https://cookpad.com/recipe/3253102">コブサラダ</a>
-        </div>
+      <div class="top-text full-height section-scroll" id="section-1-1"">
+        <h1>How Different<br>The Part Of Meat</h1>
       </div>
-    <div class="cook_contents">
-        <div class="sasami_text">
-        <h3>むね</h3>
-        <h4>脂肪が少なく加熱するとパサつく</h4>
-        <h5>オススメ</h5>
-     <a class="button_cook" style="color:#4c4c4c;font-weight:600;" target="_blank" href="https://cookpad.com/recipe/7190527">チキン南蛮</a>
-    </div>
-    <img src="/img/tori_mune.jpg" width="400px" class="img_size">
-    </div>
-    <div class="cook_contents">
-        <img src="/img/tori_momo.jpg" width="400px" class="img_size">
-        <div class="sasami_text">
-        <h3>もも</h3>
-        <h4>適度なコクと脂肪あり</h4>
-        <h5>オススメ</h5>
-      <a class="button_cook" style="color:#4c4c4c;font-weight:600;" target="_blank" href="https://cookpad.com/recipe/7191673">チキンソテー</a>
-    </div>
-    </div>
-</div>
-    </div>
-    <div class="big3">
-        <img src="/material/japan.png" class="japan">
+
+     <div class="top-icon-container full-height section-scroll" id="section-1-2"">
+      <ul class="top-icon fadein">
+        <li><a href="cow.html"><img src="material/icon_cow.svg" width="400px"></a></li>
+        <li><a href="chicken.html"><img src="/material/icon_chicken.svg" width="400px"></a></li>
+        <li><a href="pig.html"><img src="/material/icon_pig.svg" width="400px"></a></li>
+      </ul>
+   </div>
+
+<div class="bg-fixed">
+    <img src="/material/bg_clickme.png" class="bg_clickme">
     </div>
 
-    <div class="eatery">
-        <div class="eatery_contents">
-        <img src="/img/tori_hinai.jpg" width="400px" class="img_size">
-        <h6>比内地鶏</h6>
-        
-    </div>
-    <div class="eatery_contents">
-        <img src="/img/tori_nagoya.jpg" width="400px" class="img_size">
-        <h6>名古屋コーチン</h6>
-    </div>
-    <div class="eatery_contents">
-        <img src="/img/tori_satsuma.jpg" width="400px" class="img_size">
-        <h6>薩摩地鶏</h6>
-    </div>
-    </div>
+    <div id="section-scroller-button">
+		<i class="caret"></i>
+	</div>
+</header>
 
-
-</section>
-<footer><h6>&copy; SASAMI</h6></footer>
-</body>
 </html>
