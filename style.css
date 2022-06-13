@@ -329,6 +329,149 @@ footer{
 }
 
 
+
+
+
+/* スクロール */
+.scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-decoration: none;
+    color:#293462;
+    padding-top: 60px;
+  }
+
+  .scroll span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 1px solid #293462;
+    border-radius: 100%;
+    box-sizing: border-box;
+  }
+  .scroll span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #293462;
+    border-bottom: 1px solid #293462;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+  .scroll span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(51, 43, 43, 0.1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb 3s infinite;
+    animation: sdb 3s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 60px rgba(69, 61, 61, 0.1);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 60px rgba(34, 30, 30, 0.1);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+
+
+
+/* 背景 */
+
+.cd-fixed-bg {
+    position: relative;
+    /* height: 100%; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+}
+
+  /*--固定背景01--*/
+  .cd-fixed-bg.cd-bg-0  {
+    /* background-image: url('/material/bg_clickme.png'); */
+    /* background-color: antiquewhite; */
+  }
+
+  /*--固定背景01--*/
+  .cd-fixed-bg.cd-bg-1  {
+    background-image: url('/material/bg_clickme.png');
+    /* background-color:#ffff66; */
+  }
+  
+  /*--固定背景02--*/
+  .cd-fixed-bg.cd-bg-2  {
+    background-image: url('/material/bg_part.png');
+    /* background-color: aliceblue; */
+  }
+  
+  /*--固定背景03--*/
+  .cd-fixed-bg.cd-bg-3  {
+    background-image: url('/material/bg_cook.png');
+    /* background-color: aquamarine; */
+  }
+  
+  /*--固定背景04--*/
+  .cd-fixed-bg.cd-bg-4  {
+    background-image: url('/material/bg_big3.png');
+    /* background-color: blueviolet; */
+  }
+
+  /*--固定背景05--*/
+  .cd-fixed-bg.cd-bg-5  {
+    background-image: url('/material/bg_earery.png');
+    /* background-color: blue; */
+  }
+
+
+
+
 @media all and (max-width:375px){
 
 h1{
