@@ -130,13 +130,13 @@ display: flex;
 justify-content: space-between;
 }
 
-.part_ai{
+/* .part_ai{
 z-index: 100;
-}
+} */
 
 .part{
     /* background-color: #ffff66; */
-z-index: 100;
+z-index: 50;
 width: 100vw;
 height: 100vh;
 position: relative;
@@ -149,6 +149,7 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -184,6 +185,10 @@ justify-content: center;
     display:flex;
     justify-content: center;
     margin: 100px 280px;
+}
+
+.cook_text_center{
+padding: 15px;
 }
 
 .cook_center{
@@ -284,7 +289,7 @@ img{
 
 .eatery_contents{
     /* background-color: #ffff66; */
-    z-index: 100;
+    z-index: 50;
     height: 50vh;
     width: 400px;
     margin: 30px auto;
@@ -324,3 +329,102 @@ footer{
 }
 
 
+@media all and (max-width:375px){
+
+h1{
+font-size: 35px;
+width: 100vw;
+letter-spacing: 1px;
+line-height: 60px;
+}
+
+.bg_clickme{
+ width: 400px;
+}
+
+.top-icon{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+}
+.top-icon img{
+    width: 150px;
+}
+.top-icon li{
+    list-style-type: none;
+}
+
+.part_img img{
+    width: 300px;
+}
+
+nav img{
+    height: 70px;
+}
+nav{
+    left: 0;
+    top: 0;
+}
+
+.cook_text_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cook_center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+h3{
+    font-size: 35px;
+}
+h4{
+    font-size: 15px;
+}
+
+h5{
+text-align: center;
+}
+
+.japan{
+   width: 350px;
+}
+
+.img_size{
+width: 250px;
+height: 170px;
+}
+
+.cook_img1{
+    width: 250px;
+    height: 170px;
+    }
+
+.eatery_contents{
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h6{
+    font-size: 25px;
+}
+
+.wrap{
+    overflow: hidden;
+}
+}
