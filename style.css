@@ -4,7 +4,7 @@
 }
 
 /*カラーコード一覧
- 青　＃293462
+ 青　#293462
  グレー背景 #b5b5b5
  グレー文字 #4c4c4c
  黄色 #faffb4
@@ -105,6 +105,12 @@ h2{
     /* background-color: aliceblue; */
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.scroll_center{
 }
 
 .top-icon-container{
@@ -117,6 +123,10 @@ h2{
 .top-icon{
     z-index: 100;
     display: flex;
+}
+
+.top-icon li{
+    list-style-type: none;
 }
 
 nav{
@@ -262,6 +272,13 @@ h5{
     font-size: 25px;
     display: flex;
     justify-content: center;
+    box-shadow: 0 6px 0 #293462;
+    transition: 0.3s;
+}
+
+.button_cook:hover{
+transform:translateY(3px);
+box-shadow: 0 2px 0 #293462;
 }
 
 img{
@@ -315,6 +332,13 @@ img{
     font-size: 25px;
     display: flex;
     justify-content: center;
+    box-shadow: 0 6px 0 #293462;
+    transition: 0.3s;
+}
+
+.button_eatery:hover{
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 #293462;
 }
 
 h6{
@@ -353,7 +377,7 @@ footer{
     width: 46px;
     height: 46px;
     margin-left: -23px;
-    border: 1px solid #293462;
+    border: 2px solid #293462;
     border-radius: 100%;
     box-sizing: border-box;
   }
@@ -365,8 +389,8 @@ footer{
     width: 16px;
     height: 16px;
     margin: -12px 0 0 -8px;
-    border-left: 1px solid #293462;
-    border-bottom: 1px solid #293462;
+    border-left: 2px solid #293462;
+    border-bottom: 2px solid #293462;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     box-sizing: border-box;
@@ -473,6 +497,10 @@ footer{
 
 
 @media all and (max-width:375px){
+
+.cd-fixed-bg{
+    background-size: contain;
+}
 
 h1{
 font-size: 35px;

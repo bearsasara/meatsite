@@ -8,4 +8,12 @@ $(function($){
             $('.fadein').css('transform','translateY(0)');
         }
     });
+
+        $(".inview").on("inview", function (event, isInView) {
+          if (isInView) {
+            $(this).stop().addClass("is_show");
+          } else {
+            $(this).stop().removeClass("is_show");
+          }
+        });
 });
